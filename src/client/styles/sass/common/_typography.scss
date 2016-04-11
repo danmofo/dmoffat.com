@@ -1,10 +1,25 @@
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 h1,
 h2,
 h3 {
   font-family: 'Source Sans Pro', sans-serif;
+  color: $brand;
+  margin-top: 0;
 }
 
-
-html {
-  font-family: 'Source Sans Pro', sans-serif;
+h1 {
+  margin-bottom: 10px;
 }
+
+h2 {
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 0;
+}
+
+// Normalise vertical spacing
