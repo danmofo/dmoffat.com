@@ -1,0 +1,16 @@
+/**
+ * 	Main website stylesheet.
+ */
+
+// todo: add normalise
+// todo: directory structure / setup
+// todo: susy, breakpoint, config, grid!
+
+@import 'common/variables';
+@import 'common/typography';
+@import 'components/button';
+
+.sidebar {
+  background-color: $brand;
+  color: #FFF;
+}

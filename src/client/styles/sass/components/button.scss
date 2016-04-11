@@ -1,0 +1,22 @@
+/**
+ *  Button component
+ */
+
+.button {
+  padding: 10px 20px;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+}
+
+.button--primary {
+  color: #fff;
+  background-color: $primary;
+  border-color: $primary--dark;
+}
+
+.button--github {
+  color: #454545;
+  background-color: $github;
+  border-color: $github--dark;
+}
