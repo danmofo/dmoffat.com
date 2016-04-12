@@ -1,26 +1,36 @@
 /**
  * 	Main website stylesheet.
+ *
+ *  susy docs: http://susydocs.oddbird.net/en/latest/shorthand/
+ *
  */
 
-// todo: add normalise
-// todo: directory structure / setup
 // todo: susy, breakpoint, config, grid!
 
+// Vendor libraries
 @import 'vendor/normalise';
-
+@import '../../bower_components/susy/sass/susy'
+;
+// Generic styles used on almost every page
 @import 'common/variables';
 @import 'common/mixins';
+@import 'common/baseline';
 @import 'common/typography';
 @import 'common/helpers';
 @import 'common/layout';
 
-
-
+// Fully styled components that should work anywhere regardless of context
+@import 'components/navigation';
 @import 'components/button';
-@import 'post';
+@import 'components/post';
 
-.wrapper {
+// One off, page specific styles
+@import 'specific/homepage';
 
+.brand {
+  display: block;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .sidebar {
@@ -33,6 +43,13 @@
   left: 0;
   top: 0;
   bottom: 0;
+
+  padding: 30px;
+
+  &__navigation {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 .main-content {
@@ -40,4 +57,7 @@
   left: $sidebar-width;
   top: 0;
   bottom: 0;
+
+  padding: 30px 40px;
+  max-width: 790px;
 }

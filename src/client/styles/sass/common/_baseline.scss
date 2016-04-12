@@ -1,0 +1,9 @@
+/**
+ *  Common baseline styles that don't belong anywhere else.
+ */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
