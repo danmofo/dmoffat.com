@@ -6,8 +6,16 @@
 // todo: directory structure / setup
 // todo: susy, breakpoint, config, grid!
 
+@import 'vendor/normalise';
+
 @import 'common/variables';
+@import 'common/mixins';
 @import 'common/typography';
+@import 'common/helpers';
+@import 'common/layout';
+
+
+
 @import 'components/button';
 @import 'post';
 
