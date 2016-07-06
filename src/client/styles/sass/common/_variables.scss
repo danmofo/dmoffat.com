@@ -10,9 +10,10 @@ $scene-sky-night: #104685;
 $scene-pavement: #d8d8d8;
 $scene-sun: #FAF28A;
 
-$primary: #d12224;
+$primary: #1B8BD4;
 $primary-muted: lighten($primary, 10%);
 $primary-dark: darken($primary, 10%);
+$primary-darker: darken($primary-dark, 10%);
 
 $secondary: #454545;
 $secondary-muted: lighten($secondary, 10%);

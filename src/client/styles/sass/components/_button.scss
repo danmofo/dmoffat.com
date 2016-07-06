@@ -22,7 +22,7 @@
   border-color: $primary-dark;
 
   &:hover {
-    background-color: #585858;
-    border-color: #232323;
+    background-color: $primary-dark;
+    border-color: $primary-darker;
   }
 }

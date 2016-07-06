@@ -14,7 +14,8 @@
   text-align: center;
 }
 
-.band--primary {
+.band--primary,
+.band-breakout--primary {
   background-color: $primary;
 }
 
@@ -28,9 +29,16 @@
 
 .band--primary .band__title,
 .band--secondary .band__title,
+.band--secondary ul,
 .band--primary .band__link,
-.band--secondary .band__link {
+.band--secondary .band__link,
+.band-breakout--primary .band__title,
+.band-breakout--primary .band__link {
   color: $inverse;
+}
+
+.band--secondary.band--secondary ul a {
+  color: #9c9c9c;
 }
 
 

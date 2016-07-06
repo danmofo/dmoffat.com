@@ -186,4 +186,6 @@
   z-index: 3;
 }
 
-
+.asd {
+    @include span(6 of 12 wide);
+}
