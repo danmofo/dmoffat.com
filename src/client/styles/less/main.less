@@ -1,60 +1,17 @@
-// @scene-sky: #4a90e2;
-@scene-sky: #104685;
-@scene-pavement: #d8d8d8;
-@scene-sun: #FAF28A;
+// Common
+@import '_variables';
+@import '_utils';
+@import '_baseline';
+@import '_animations';
 
-@primary: #E24A4A;
-@primary-muted: lighten(@primary, 10%);
+// Components
+@import '_button';
+@import '_band';
+@import '_scene';
+@import '_navigation';
 
-@secondary: #454545;
-@secondary-muted: lighten(@secondary, 10%);
-
-@inverse: #FFF;
-@inverse-muted: darken(@inverse, 10%);
-
-@btn-primary-bg: @primary;
-@btn-primary-border: darken(@primary, 10%);
-@btn-primary-text: #fff;
-
-
-
-
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-  font-family: 'Avenir Next';
-
-  color: #454545;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-}
-
-@keyframes leftToRight {
-  100% {
-    transform: translate3d(1000px, 0px, 0px);
-  }
-}
-
-
-@keyframes moveInFromTop {
-  100% {
-    opacity: 1;
-    transform: translate3d(0, 40px, 0);
-  }
-}
-
-h1, h2, h3, h4 {
-  margin-top: 0;
-}
-
+// Pages
+@import '_homepage';
 
 .container {
   margin: 0 auto;
@@ -70,23 +27,6 @@ h1, h2, h3, h4 {
   line-height: 67px;
 }
 
-.navigation {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  font-size: 2rem;
-}
-
-.navigation__item {
-  display: inline-block;
-  width: 100px;
-  padding: 20px;
-}
-
-.navigation__item__link {
-  display: block;
-  color: @inverse;
-}
 
 .website-header {
   padding-top: 30px;
@@ -104,120 +44,13 @@ h1, h2, h3, h4 {
 }
 
 
-.scene {
-  height: 730px;
-  width: 100%;
-  background-color: @scene-sky;
-  position: relative;
-
-  .intro {
-    color: @inverse-muted;
-    font-size: 3rem;
-    font-weight: 100;
-
-    opacity: 0;
-
-    a {
-      font-weight: 500;
-      color: @inverse-muted;
-    }
+.work-showcase {
   }
 
-}
-
-
-.intro__cta {
+.work-showcase__item {
 
 }
-
-.intro__title {
-  padding-top: 35px;
-  color: #FFF;
-  font-weight: normal;
-  font-size: 48px;
-
-  text-align: center;
-  margin-left: 40px;
-
-}
-
-.intro__subtitle {
-
-}
-
-
-.scene__sun {
-  width: 100px;
-  border-radius: 50%;
-  background-color: @scene-sun;
-}
-
-.scene__cloud-1 {
-  background-color: #fff;
-}
-
-.scene__cloud-2 {
-
-}
-
-.scene__cloud-3 {
-
-}
-
-.scene__sky {
-  position: absolute;
-  top: 130px;
-  left: 583px;
-}
-
-.scene__concrete {
-  z-index: 2;
-  height: 100px;
-  background-color: @scene-pavement;
-
-  position: absolute;
-  bottom: -50px;
-  width: 100%;
-}
-
-.scene__skateboard {
-  will-change: transform;
-  transform: translate3d(-110px, 0px, 0px);
-  position: absolute;
-
-  bottom:0;
-
-  width: 110px;
-  animation: leftToRight 1s ease;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-  z-index: 3;
-}
-
-
-.scene__shrubbery {
-  position: absolute;
-  bottom: -167px;
-  z-index: 1;
-}
-
-.u-textCenter {
-  text-align: center;
-}
-
-// Force a block context
-.u-displayBlock {
-  display: block;
-}
-
-.animation-moveInFromTop {
-  opacity: 0;
-  animation: moveInFromTop 1s ease;
-  animation-delay: .3s;
-  animation-fill-mode: forwards;
-}
-
-.animation-moveInFromTop--delayed {
-  animation-delay: 1s;
+.park-scene {
+  background-color: #d8d8d8;
 }
 

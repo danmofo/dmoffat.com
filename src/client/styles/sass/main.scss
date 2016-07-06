@@ -18,14 +18,27 @@
 @import 'common/typography';
 @import 'common/helpers';
 @import 'common/layout';
+@import 'common/animations';
 
 // Fully styled components that should work anywhere regardless of context
 @import 'components/navigation';
 @import 'components/button';
 @import 'components/post';
+@import 'components/band';
 
 // One off, page specific styles
 @import 'specific/homepage';
+@import 'specific/scene';
+
+
+.g-col-half {
+  @include span(6);
+}
+
+.my-stuff {
+  @extend .g-col-half;
+}
+
 
 .brand {
   display: block;
@@ -61,3 +74,116 @@
   padding: 30px 40px;
   max-width: 790px;
 }
+
+
+.container {
+  @include container(1140px);
+}
+
+.brand-logo {
+  display: block;
+  padding-right: 50px;
+  color: $inverse;
+  font-size: 3rem;
+  line-height: 67px;
+}
+
+
+.website-header {
+  margin-top: -40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: rgba(0, 0, 0, 0.0);
+  overflow: hidden;
+}
+
+.website-footer {
+  background-color:#515151;
+  padding: 20px 0px;
+}
+
+.website-header__brand {
+  @include span(3 of 12);
+}
+
+.website-header__nav {
+  @include span(9 of 12);
+}
+
+// Generic high level layout classes, these cannot be nested without passing the context
+.grid-column--third {
+    @include span(4);
+}
+
+.grid-column--twothirds {
+  @include span(8);
+}
+
+.grid-column--half {
+  @include span(6);
+}
+
+.grid-column--half-2 {
+  @include span(3 of 6);
+}
+
+.work-showcase {
+  overflow: hidden;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.work-showcase__item {
+
+  @include breakpoint(small) {
+    @include span(6 of 12);
+  }
+
+  @include breakpoint(medium) {
+    @include span(4 of 12);
+  }
+
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    background-color: #757576;
+  }
+}
+.park-scene {
+  background-color: #d8d8d8;
+  height: 700px;
+}
+
+.park-scene__rail {
+  position: absolute;
+  bottom: 0px;
+  left: 40%;
+}
+
+.park-scene__ramp {
+  position: absolute;
+  bottom: 0px;
+  left: 10%;
+}
+
+.park-scene__quarter {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+}
+
+
+.park-scene__skateboard {
+    will-change: transform;
+  transform: translate3d(-700px, 0px, 0px);
+  position: absolute;
+  bottom: -3px;
+  width: 110px;
+  animation: leftToRight--half 2s cubic-bezier(0, 0, 0.2, 1);
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  z-index: 3;
+}
+
+

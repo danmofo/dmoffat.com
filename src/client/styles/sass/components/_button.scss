@@ -1,22 +1,28 @@
 /**
- *  Button component
+ *  Button component.
  */
 
 .button {
-  padding: 10px 20px;
+  padding: 20px 40px;
   display: inline-block;
-  border-bottom: 2px solid transparent;
+  border-bottom: 4px solid transparent;
   text-decoration: none;
+  border-radius: 3px;
+
+  transition: all .3s ease-in-out;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .button--primary {
   color: #fff;
   background-color: $primary;
-  border-color: $primary--dark;
-}
+  border-color: $primary-dark;
 
-.button--github {
-  color: #454545;
-  background-color: $github;
-  border-color: $github--dark;
+  &:hover {
+    background-color: #585858;
+    border-color: #232323;
+  }
 }

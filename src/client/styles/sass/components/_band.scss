@@ -1,0 +1,64 @@
+/**
+ *  Band component
+ *
+ *  A band is g
+ */
+
+.band {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-size: 2rem;
+}
+
+.band--centered {
+  text-align: center;
+}
+
+.band--primary {
+  background-color: $primary;
+}
+
+.band--secondary {
+  background-color: #3F3F3F;
+}
+
+.band--concrete {
+  background-color: #9b9b9c;
+}
+
+.band--primary .band__title,
+.band--secondary .band__title,
+.band--primary .band__link,
+.band--secondary .band__link {
+  color: $inverse;
+}
+
+
+.band--primary .band__intro,
+.band--secondary .band__intro, {
+  color: $inverse-muted;
+}
+
+.band--muted .band__intro {
+  color: #737373;
+}
+
+.band__title {
+  color: #454545;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+
+.band__intro {
+  font-size: 1.8rem;
+  color: lighten(#454545, 10%);
+
+  .band__link {
+    margin-top: 2rem;
+  }
+}
+
+.band__link {
+  color: $primary;
+}

@@ -2,37 +2,13 @@
  *  General typography, specific sizes are generally specified at the component level
  */
 
-html {
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-h1,
-h2,
-h3 {
-  font-family: 'Source Sans Pro', sans-serif;
-  color: $brand;
+h1, h2, h3, h4, p {
   margin-top: 0;
-}
-
-h1 {
-  margin-bottom: 10px;
-  font-size: 28px;
-}
-
-h2 {
-  margin-bottom: 0px;
-  font-size: 18px;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 20px;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-strong {
-  color: #3C3C3C;
 }
 
 // Normalise vertical spacing
+
+
+p {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,29 @@
+@keyframes leftToRight {
+  100% {
+    transform: translate3d(1000px, 0px, 0px);
+  }
+}
+
+@keyframes moveInFromTop {
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 40px, 0);
+  }
+}
+
+@keyframes lightToDark {
+  50% {
+    background-color: @scene-sky-night;
+  }
+}
+
+.animation-moveInFromTop {
+  opacity: 0;
+  animation: moveInFromTop 1s ease;
+  animation-delay: .3s;
+  animation-fill-mode: forwards;
+}
+
+.animation-moveInFromTop--delayed {
+  animation-delay: 1s;
+}

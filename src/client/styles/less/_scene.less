@@ -1,0 +1,78 @@
+.scene {
+  height: 730px;
+  width: 100%;
+  background-color: @scene-sky-day;
+  position: relative;
+
+  .intro {
+    color: @inverse-muted;
+    font-size: 3rem;
+    font-weight: 100;
+
+    opacity: 0;
+
+    a {
+      font-weight: 500;
+      color: @inverse-muted;
+    }
+  }
+
+}
+
+.scene__sun {
+  width: 100px;
+  border-radius: 50%;
+  background-color: @scene-sun;
+}
+
+.scene__cloud-1 {
+  background-color: #fff;
+}
+
+.scene__cloud-2 {
+
+}
+
+.scene__cloud-3 {
+
+}
+
+.scene__sky {
+
+}
+
+.scene__concrete {
+  z-index: 2;
+  height: 650px;
+  background-color: @scene-pavement;
+
+
+}
+
+.scene__bush-1 {
+  position: absolute;
+  bottom: -1px;
+}
+
+.scene__bush-2 {
+  position: absolute;
+  bottom: -1px;
+}
+
+.scene__skateboard {
+  will-change: transform;
+  transform: translate3d(-300px, 0px, 0px);
+  position: absolute;
+  bottom: -3px;
+  width: 190px;
+  animation: leftToRight 2s cubic-bezier(0, 0, 0.2, 1);
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  z-index: 3;
+}
+
+.scene__shrubbery {
+  position: absolute;
+  bottom: -167px;
+  z-index: 1;
+}
