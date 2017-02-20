@@ -1,3 +1,22 @@
 /**
  *  Layout.
  */
+
+.container {
+  @include container(1140px);
+}
+
+.grid-row {
+    margin-left: -1.3888888889%;
+    margin-right: -1.3888888889%;
+    overflow: hidden;
+}
+
+// Generic high level layout classes, these cannot be nested without passing the context
+.grid-column--onethird { @include span(4); }
+.grid-column--twothirds { @include span(8); }
+
+.grid-column--quarter { @include span(3); }
+
+.grid-column--half { @include span(6); }
+.grid-column--half-2 { @include span(3 of 6); }

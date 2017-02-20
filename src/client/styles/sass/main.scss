@@ -23,61 +23,72 @@
 // Fully styled components that should work anywhere regardless of context
 @import 'components/navigation';
 @import 'components/button';
-@import 'components/post';
 @import 'components/band';
 
 // One off, page specific styles
 @import 'specific/homepage';
 @import 'specific/scene';
 
+.section--experience {}
 
-.g-col-half {
-  @include span(6);
+
+.project-list {
+
 }
 
-.my-stuff {
-  @extend .g-col-half;
+.project {
+    overflow: hidden;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    font-size: 1.8rem;
+
+    &__title {
+        margin-bottom: 2rem;
+    }
+
+    &__list {
+        padding-left: 0;
+        list-style-type: none;
+
+        li {
+            margin-bottom: .3rem;
+        }
+    }
+
+    &__image {
+        width: 25rem;
+    }
+
+    &__left {
+        @include span(6);
+    }
+
+    &__right {
+        @include span(6);
+    }
 }
 
+.project:nth-child(odd) {
+    // background-color: #CCC;
+}
+
+.project--one {}
+.project-two {}
+.project-three {}
+
+
+.project-nav-list {
+    font-size: 1.8rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 3rem;
+}
 
 .brand {
   display: block;
   font-size: 30px;
   font-weight: bold;
-}
-
-.sidebar {
-  background-color: $brand;
-  color: #FFF;
-
-  width: $sidebar-width;
-
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-
-  padding: 30px;
-
-  &__navigation {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-}
-
-.main-content {
-  position: absolute;
-  left: $sidebar-width;
-  top: 0;
-  bottom: 0;
-
-  padding: 30px 40px;
-  max-width: 790px;
-}
-
-
-.container {
-  @include container(1140px);
 }
 
 .brand-logo {
@@ -88,6 +99,11 @@
   line-height: 67px;
 }
 
+.banner-section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #64727C;
+}
 
 .website-header {
   margin-top: -40px;
@@ -110,82 +126,44 @@
   @include span(9 of 12);
 }
 
-// Generic high level layout classes, these cannot be nested without passing the context
-.grid-column--third {
-    @include span(4);
+
+.skills-list {
+    padding-top: 40px;
 }
 
-.grid-column--twothirds {
-  @include span(8);
-}
+.skill--styling {        background-image: url('/images/styling.svg'); }
+.skill--js {             background-image: url('/images/js.svg'); }
+.skill--taskmanagers {   background-image: url('/images/taskmanagers.svg'); }
+.skill--vcs {            background-image: url('/images/vcs.svg'); }
+.skill--programming {    background-image: url('/images/java.svg'); }
+.skill--datastorage {    background-image: url('/images/datastorage.svg'); }
+.skill--design {         background-image: url('/images/design.svg'); }
+.skill--os {             background-image: url('/images/os.svg'); }
+.skill--ide {            background-image: url('/images/ide.svg'); }
+.skill--misc {           background-image: url('/images/misc.svg'); }
+.skill--templating {     background-image: url('/images/html5.svg'); }
 
-.grid-column--half {
-  @include span(6);
-}
+.skill {
+    position: relative;
+    margin-bottom: 1rem;
+    background-size: 5rem;
+    background-repeat: no-repeat;
+    padding-left: 7rem;
 
-.grid-column--half-2 {
-  @include span(3 of 6);
-}
+    &:before {
 
-.work-showcase {
-  overflow: hidden;
-  margin-top: 50px;
-  margin-bottom: 80px;
-}
+    }
 
-.work-showcase__item {
+    &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: .5rem
+    }
 
-  @include breakpoint(small) {
-    @include span(6 of 12);
-  }
-
-  @include breakpoint(medium) {
-    @include span(4 of 12);
-  }
-
-  img {
-    width: 100%;
-    max-width: 100%;
-    height: 200px;
-    background-color: #757576;
-  }
-}
-.park-scene {
-  background-color: #d8d8d8;
-  height: 700px;
-}
-
-.park-scene__rail {
-  position: absolute;
-  bottom: 0px;
-  left: 40%;
-}
-
-.park-scene__ramp {
-  position: absolute;
-  bottom: 0px;
-  left: 10%;
-}
-
-.park-scene__quarter {
-  position: absolute;
-  bottom: 0px;
-  right: 0;
+    &__content {
+        padding-bottom: 2rem;
+        color: #535353;
+    }
 }
 
 
-.park-scene__skateboard {
-    will-change: transform;
-  transform: translate3d(-700px, 0px, 0px);
-  position: absolute;
-  bottom: -3px;
-  width: 110px;
-  animation: leftToRight--half 2s cubic-bezier(0, 0, 0.2, 1);
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
-  z-index: 3;
-}
-
-.asd {
-    @include span(6 of 12 wide);
-}

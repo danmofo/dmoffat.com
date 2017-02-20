@@ -4,6 +4,14 @@
  *  A band is g
  */
 
+hr {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    margin-left: -5rem;
+    margin-right: -5rem;
+    border: 1px solid #C9C9C9;
+}
+
 .band {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -23,9 +31,6 @@
   background-color: #3F3F3F;
 }
 
-.band--concrete {
-  background-color: #9b9b9c;
-}
 
 .band--primary .band__title,
 .band--secondary .band__title,
@@ -53,18 +58,27 @@
 
 .band__title {
   color: #454545;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
+  font-size: 3.6rem;
   font-weight: 500;
 }
 
+.band__subtitle {
+    font-size: 2.4rem;
+}
 
 .band__intro {
   font-size: 1.8rem;
-  color: lighten(#454545, 10%);
+  color: #535353;
 
   .band__link {
     margin-top: 2rem;
   }
+}
+
+.band__content {
+    font-size: 1.8rem;
+    color: #535353;
 }
 
 .band__link {

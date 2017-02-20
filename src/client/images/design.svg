@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>design</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18.5" cy="18.5" r="18.5"></circle>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.682352941   0 0 0 0 0  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="take-two" transform="translate(-631.000000, -1821.000000)">
+            <g id="experience-and-skills" transform="translate(132.000000, 786.000000)">
+                <g id="technical-skills" transform="translate(37.000000, 601.000000)">
+                    <g id="skills-list" transform="translate(0.000000, 284.000000)">
+                        <g id="design-software" transform="translate(463.000000, 113.000000)">
+                            <g id="design" transform="translate(0.000000, 38.000000)">
+                                <g id="Oval-2">
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                    <use stroke-opacity="0.167855525" stroke="#979797" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                </g>
+                                <g id="Sketch_logo_frame" transform="translate(9.000000, 10.000000)">
+                                    <g id="Group">
+                                        <g id="Page-1">
+                                            <g id="Sketch-Flat-Logo">
+                                                <g id="Group">
+                                                    <g id="Base" fill="#FFAE00">
+                                                        <polygon id="Polygon" transform="translate(10.000000, 9.273810) rotate(180.000000) translate(-10.000000, -9.273810) " points="10 -2.06057393e-13 20 11.9086503 15.6680162 17.9252157 10 18.547619 4.33198381 17.9252157 1.42108547e-14 11.9086503"></polygon>
+                                                    </g>
+                                                    <g id="Bottom-Back" transform="translate(0.000000, 6.638969)" fill="#EC6C00">
+                                                        <polygon id="Polygon" transform="translate(10.000000, 5.954325) rotate(180.000000) translate(-10.000000, -5.954325) " points="10 -3.73034936e-14 20 11.9086503 0 11.9086503"></polygon>
+                                                    </g>
+                                                    <g id="Bottom-Mid" transform="translate(4.048583, 6.638969)" fill="#FFAE00">
+                                                        <polygon id="Polygon" transform="translate(5.951417, 5.954325) rotate(180.000000) translate(-5.951417, -5.954325) " points="5.951417 -3.19744231e-14 11.902834 11.9086503 -3.80140364e-13 11.9086503"></polygon>
+                                                    </g>
+                                                    <g id="Top-Mid" transform="translate(4.048583, 0.000000)" fill="#FFEFB4">
+                                                        <polygon id="Polygon" transform="translate(5.951417, 3.319484) rotate(180.000000) translate(-5.951417, -3.319484) " points="5.951417 6.63896879 11.902834 3.99016308e-13 -3.71258579e-13 2.84217094e-13"></polygon>
+                                                    </g>
+                                                    <g id="Top-Side-Left" transform="translate(0.000000, 0.622403)" fill="#FFAE00">
+                                                        <polygon id="Polygon" transform="translate(2.165992, 3.008283) rotate(180.000000) translate(-2.165992, -3.008283) " points="-3.44613227e-13 6.01656546 2.22672065 2.98753595 4.33198381 4.1577953e-14 0.24291498 -6.92779167e-14"></polygon>
+                                                    </g>
+                                                    <g id="Top-Side-Right" transform="translate(17.500000, 4.122403) scale(-1, 1) translate(-17.500000, -4.122403) translate(15.000000, 0.622403)" fill="#FFAE00">
+                                                        <polygon id="Polygon" transform="translate(2.165992, 3.008283) rotate(180.000000) translate(-2.165992, -3.008283) " points="-2.64677169e-13 6.01656546 2.22672065 2.98753595 4.33198381 4.1577953e-14 0.24291498 -6.92779167e-14"></polygon>
+                                                    </g>
+                                                    <g id="Top-Left" transform="translate(4.048583, 0.000000)" fill="#FED305">
+                                                        <polygon id="Polygon" transform="translate(2.975709, 3.319484) rotate(180.000000) translate(-2.975709, -3.319484) " points="5.66801619 6.01656546 5.951417 2.04281037e-14 -7.63833441e-14 6.63896879"></polygon>
+                                                    </g>
+                                                    <g id="Top-Right" transform="translate(10.000000, 0.000000)" fill="#FED305">
+                                                        <polygon id="Polygon" transform="translate(2.975709, 3.319484) rotate(-0.000000) translate(-2.975709, -3.319484) " points="5.66801619 6.01656546 5.951417 -4.4408921e-16 4.4408921e-16 6.63896879"></polygon>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

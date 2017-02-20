@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>vcs</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="18.5" cy="18.5" r="18.5"></circle>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.941176471   0 0 0 0 0.317647059   0 0 0 0 0.2  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="take-two" transform="translate(-170.000000, -1705.000000)">
+            <g id="experience-and-skills" transform="translate(132.000000, 786.000000)">
+                <g id="technical-skills" transform="translate(37.000000, 601.000000)">
+                    <g id="skills-list" transform="translate(0.000000, 284.000000)">
+                        <g id="version-control" transform="translate(2.000000, 0.000000)">
+                            <g id="Group-2" transform="translate(0.000000, 35.000000)">
+                                <g id="vcs">
+                                    <g id="Oval-2">
+                                        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                                        <use stroke-opacity="0.167855525" stroke="#979797" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                    </g>
+                                    <path d="M32.3105376,16.768 L20.2316989,4.68976344 C19.5362151,3.99397849 18.408086,3.99397849 17.712,4.68976344 L15.204043,7.19832258 L18.3855054,10.3797849 C19.1249462,10.1298925 19.9727742,10.2975914 20.5619785,10.8870968 C21.1547957,11.4802151 21.3209892,12.3352688 21.0647742,13.0774194 L24.1315269,16.143871 C24.8736774,15.887957 25.7293333,16.0535484 26.3218495,16.6469677 C27.1498065,17.4749247 27.1498065,18.8165161 26.3218495,19.6450753 C25.4932903,20.4733333 24.1516989,20.4733333 23.3228387,19.6450753 C22.7002151,19.0218495 22.5460645,18.1065806 22.8618925,17.3394409 L20.0016774,14.4795269 L20.0016774,22.0055054 C20.2033978,22.1054624 20.3939785,22.2385376 20.5619785,22.4065376 C21.3899355,23.2344946 21.3899355,24.576086 20.5619785,25.4049462 C19.7340215,26.2326022 18.3915269,26.2326022 17.564172,25.4049462 C16.7362151,24.5757849 16.7362151,23.2341935 17.564172,22.4065376 C17.7689032,22.2021075 18.0058495,22.0473548 18.2587527,21.9437849 L18.2587527,14.3476559 C18.0058495,14.244086 17.7695054,14.0908387 17.564172,13.8849032 C16.9370323,13.2580645 16.7861935,12.3373763 17.1077419,11.5672258 L13.9714409,8.43032258 L5.68886022,16.712 C4.99307527,17.4083871 4.99307527,18.5365161 5.68886022,19.2323011 L17.7683011,31.3108387 C18.4637849,32.0066237 19.5916129,32.0066237 20.288,31.3108387 L32.3105376,19.2883011 C33.0063226,18.5925161 33.0063226,17.4637849 32.3105376,16.768 L32.3105376,16.768 Z" id="Shape" fill="#F05133"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

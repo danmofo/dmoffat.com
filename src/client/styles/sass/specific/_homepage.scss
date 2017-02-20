@@ -11,6 +11,7 @@
   color: #FFF;
   font-weight: normal;
   font-size: 4.8rem;
+  margin-top: 11rem;
 
   text-align: center;
   margin-left: 40px;
@@ -19,6 +20,8 @@
 
 .intro__subtitle {
   font-size: 3rem;
+  color: #FFFFFF;
+  font-weight: 100;
 }
 
 .band-breakout--primary {
@@ -26,58 +29,4 @@
   @include bleed-x(gutter() 1000px);
   @include bleed-y(60px 400px);
   padding-left: 60px;
-}
-
-.latest-posts-card {
-  padding: 50px 60px;
-  background-color: #FFF;
-  @include bleed-x(0px 500px);
-  box-shadow: 1px 2px 3px rgba(0,0,0,0.3);
-}
-
-.asd {
-
-}
-
-.latest-posts {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.latest-posts__post:last-child {
-  border-bottom: 0;
-}
-
-
-.latest-posts__post {
-  font-size: 1.8rem;
-  color: $secondary-muted;
-  border-bottom: 1px solid #CCC;
-  display: block;
-  overflow: hidden;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: #7A7A7A;
-}
-.latest-posts__post__info {
-  display: block;
-  @include span(9 of 12);
-}
-
-
-.latest-posts__post__date {
-  color: $primary;
-  font-size: 16px;
-}
-
-.latest-posts__post__title {
-  font-size: 1.8rem;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.latest-posts__post__cta {
-  @include span(3 of 12);
-  display: block;
 }
