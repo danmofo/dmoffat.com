@@ -41,6 +41,11 @@
     padding-top: 4rem;
     padding-bottom: 3rem;
     font-size: 1.8rem;
+    border-bottom: 1px dashed #ccc;
+
+    &:last-child {
+        border: none;
+    }
 
     &__title {
         margin-bottom: 2rem;
@@ -49,6 +54,7 @@
     &__list {
         padding-left: 0;
         list-style-type: none;
+        font-size: 1.6rem;
 
         li {
             margin-bottom: .3rem;
@@ -60,11 +66,21 @@
     }
 
     &__left {
-        @include span(6);
+        @include span(3);
     }
 
     &__right {
-        @include span(6);
+        @include span(9);
+    }
+}
+
+.project--reversed {
+    .project__left {
+        @include span(9);
+    }
+
+    .project__right {
+        @include span(3);
     }
 }
 
@@ -78,11 +94,17 @@
 
 
 .project-nav-list {
-    font-size: 1.8rem;
+    font-size: 2rem;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
+
+    a {
+        text-decoration: none;
+        margin-bottom: 1.5rem;
+        display: block;
+    }
 }
 
 .brand {
@@ -166,4 +188,19 @@
     }
 }
 
+.work__title {
+    margin-bottom: 1rem;
+}
 
+.work__list {
+    font-size: 1.6rem;
+}
+
+
+.band--featured .band__title {
+    margin-bottom: 1rem;
+}
+
+.band--featured .band__intro {
+    margin-bottom: 3rem;
+}

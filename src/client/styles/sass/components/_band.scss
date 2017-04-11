@@ -9,7 +9,7 @@ hr {
     margin-bottom: 7rem;
     margin-left: -5rem;
     margin-right: -5rem;
-    border: 1px solid #C9C9C9;
+    border: 1px solid #e2e2e2;
 }
 
 .band {
@@ -20,6 +20,10 @@ hr {
 
 .band--centered {
   text-align: center;
+}
+
+.band--dark {
+    background-color: black;
 }
 
 .band--primary,
@@ -38,7 +42,9 @@ hr {
 .band--primary .band__link,
 .band--secondary .band__link,
 .band-breakout--primary .band__title,
-.band-breakout--primary .band__link {
+.band-breakout--primary .band__link,
+.band--dark .band__title,
+.band--dark .band__link {
   color: $inverse;
 }
 
@@ -48,7 +54,8 @@ hr {
 
 
 .band--primary .band__intro,
-.band--secondary .band__intro, {
+.band--secondary .band__intro,
+.band--dark .band__intro {
   color: $inverse-muted;
 }
 
@@ -65,6 +72,7 @@ hr {
 
 .band__subtitle {
     font-size: 2.4rem;
+    margin-bottom: 1.3rem;
 }
 
 .band__intro {
@@ -78,9 +86,14 @@ hr {
 
 .band__content {
     font-size: 1.8rem;
+    line-height: 1.4;
     color: #535353;
 }
 
 .band__link {
   color: $primary;
+}
+
+.band__cta {
+    margin-top: 3rem;
 }
