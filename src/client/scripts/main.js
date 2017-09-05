@@ -2,10 +2,17 @@
 
   'use strict';
 
-  var header = document.querySelector('.website-header');
+  function $(selector) {
+    return document.querySelector(selector);
+  }
 
-  setTimeout(function() {
-    header.classList.add('animation-moveInFromTop');
-  }, 1000);
+  var mobileNavigationToggle = $('.js-mobile-navigation-toggle');
+  var mobileNavigationContent = $('.js-navigation-content');
+
+  mobileNavigationToggle.addEventListener('click', onToggleMobileNavigation);
+
+  function onToggleMobileNavigation(event) {
+    mobileNavigationContent.classList.toggle('is-active');
+  }
 
 })();

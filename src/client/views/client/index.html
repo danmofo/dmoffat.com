@@ -10,20 +10,23 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <!-- Place favicon.ico in the root directory -->
 
-<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/styles/css/main.css">
 </head>
 <body>
     <!-- Introduction / scene -->
     <section class="scene">
-        <header class="website-header" style="opacity: 0;">
+        <header class="website-header">
             <div class="container">
                 <div class="website-header__brand">
-                <span class="brand-logo">Daniel Moffat</span>
+                    <span class="brand-logo">Daniel Moffat </span>
                 </div>
                 <nav class="website-header__nav" role="navigation">
-                    <ul class="navigation">
-                        <li class="navigation__item"><a href="" class="navigation__item__link">Home</a></li>
+                    <svg class="js-mobile-navigation-toggle mobile-navigation" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8">
+                      <path class="mobile-navigation__icon" d="M0 0v1h8v-1h-8zm0 2.97v1h8v-1h-8zm0 3v1h8v-1h-8z" transform="translate(0 1)" />
+                    </svg>
+                    <ul class="js-navigation-content navigation">
+                        <li class="navigation__item"><a href="" class="navigation__item__link is-active">Home</a></li>
                         <li class="navigation__item"><a href="" class="navigation__item__link">Experience &amp; skills</a></li>
                         <li class="navigation__item"><a href="" class="navigation__item__link">Work</a></li>
                         <li class="navigation__item"><a href="" class="navigation__item__link">Playground</a></li>
@@ -35,7 +38,7 @@
         </header>
         <div class="container">
             <div class="intro animation-moveInFromTop u-textCenter">
-                <h1 class="intro__title">My name is Daniel and I'm a website developer<br/> from the West Midlands.</h1>
+                <h1 class="intro__title">My name is Daniel and I'm a website developer from the West Midlands.</h1>
                 <p class="intro__subtitle">I design and build performant, aesthetically-pleasing websites and web applications, from the conception stage all the way through to the build.</p>
             </div>
         </div>
@@ -364,7 +367,7 @@
     </section>
 
     <!-- Playground -->
-    <section class="band">
+    <!-- <section class="band">
         <div class="container">
             <div class="grid-row">
                 <div class="grid-column--half">
@@ -448,7 +451,7 @@
             </div>
             <hr />
         </div>
-    </section>
+    </section> -->
 
     <!-- About me -->
     <section class="band">
