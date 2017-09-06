@@ -1,8 +1,12 @@
 .scene {
-  height: 730px;
   width: 100%;
   background-color: $scene-sky-day;
   position: relative;
+  height: 450px;
+
+  @include breakpoint('large') {
+      height: 730px;
+  }
 
   .intro {
     color: $inverse-muted;

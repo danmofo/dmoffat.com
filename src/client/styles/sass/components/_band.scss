@@ -13,9 +13,14 @@ hr {
 }
 
 .band {
-  padding-top: 60px;
-  padding-bottom: 60px;
   font-size: 2rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  @include breakpoint('medium') {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+  }
 }
 
 .band--centered {
@@ -65,19 +70,35 @@ hr {
 
 .band__title {
   color: #454545;
-  margin-bottom: 4rem;
-  font-size: 3.6rem;
   font-weight: 500;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+
+  @include breakpoint('medium') {
+    margin-bottom: 4rem;
+    font-size: 3.6rem;
+  }
 }
 
 .band__subtitle {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     margin-bottom: 1.3rem;
+    line-height: 1.8rem;
+
+    &__icon {
+        width: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    @include breakpoint('medium') {
+        font-size: 2.4rem;
+        margin-bottom: 1.3rem;
+    }
 }
 
 .band__intro {
   font-size: 1.8rem;
-  color: #606060;
+  color: #6f6f6f;
 
   .band__link {
     margin-top: 2rem;
@@ -85,9 +106,13 @@ hr {
 }
 
 .band__content {
-    font-size: 1.8rem;
-    line-height: 1.4;
-    color: #606060;
+    line-height: 1.5;
+    color: #6f6f6f;
+    font-size: 16px;
+
+    @include breakpoint('medium') {
+        font-size: 1.8rem;
+    }
 }
 
 .band__link {

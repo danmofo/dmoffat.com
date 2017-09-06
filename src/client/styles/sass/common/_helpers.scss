@@ -31,3 +31,10 @@
 .img-fluid {
     max-width: 100%;
 }
+
+.u-hiddenSmall {
+    display: none;
+    @include breakpoint('small') {
+        display: inherit;
+    }
+}

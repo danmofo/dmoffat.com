@@ -28,8 +28,16 @@
 }
 
 // Generic high level layout classes, these cannot be nested without passing the context
-.grid-column--onethird { @include span(4); }
-.grid-column--twothirds { @include span(8); }
+.grid-column--onethird {
+    @include breakpoint('small') {
+        @include span(4);
+    }
+}
+.grid-column--twothirds {
+    @include breakpoint('small') {
+        @include span(8);
+    }
+}
 
 .grid-column--quarter { @include span(3); }
 
