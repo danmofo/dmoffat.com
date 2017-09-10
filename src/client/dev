@@ -1,0 +1,1 @@
+grunt dev --no-tests --gruntfile=/Users/danielmoffat/dev/grunt/base-project/Gruntfile.js --src=/Users/danielmoffat/dev/dmoffat.com/src/client --dest=/Users/danielmoffat/dev/dmoffat.com/src/client/../../dest

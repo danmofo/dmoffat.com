@@ -5,11 +5,20 @@
  */
 
 hr {
-    margin-top: 7rem;
-    margin-bottom: 7rem;
     margin-left: -5rem;
     margin-right: -5rem;
     border: 1px solid #e2e2e2;
+    margin-top: 4.5rem;
+    margin-bottom: 4.5rem;
+
+    @include breakpoint('large') {
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+    }
+}
+
+hr.full-width {
+    @include bleed-x(100% 100%);
 }
 
 .band {
@@ -82,8 +91,12 @@ hr {
 
 .band__subtitle {
     font-size: 1.8rem;
-    margin-bottom: 1.3rem;
+    margin-bottom: 1.8rem;
     line-height: 1.8rem;
+
+    margin-bottom: 1.8rem;
+
+
 
     &__icon {
         width: 1.5rem;
@@ -92,13 +105,19 @@ hr {
 
     @include breakpoint('medium') {
         font-size: 2.4rem;
-        margin-bottom: 1.3rem;
+        margin-bottom: 2.2rem;
     }
 }
 
 .band__intro {
-  font-size: 1.8rem;
-  color: #6f6f6f;
+    line-height: 1.5;
+    color: #6f6f6f;
+    font-size: 1.6px;
+
+    @include breakpoint('medium') {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
 
   .band__link {
     margin-top: 2rem;
@@ -108,7 +127,7 @@ hr {
 .band__content {
     line-height: 1.5;
     color: #6f6f6f;
-    font-size: 16px;
+    font-size: 1.6rem;
 
     @include breakpoint('medium') {
         font-size: 1.8rem;
@@ -120,5 +139,9 @@ hr {
 }
 
 .band__cta {
-    margin-top: 3rem;
+    margin-top: 1rem;
+
+    @include breakpoint('large') {
+        margin-top: 3rem;
+    }
 }
