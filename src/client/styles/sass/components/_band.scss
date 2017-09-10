@@ -99,7 +99,7 @@ hr.full-width {
 
 
     &__icon {
-        width: 1.5rem;
+        width: 2rem;
         margin-right: 1.5rem;
     }
 
@@ -112,7 +112,7 @@ hr.full-width {
 .band__intro {
     line-height: 1.5;
     color: #6f6f6f;
-    font-size: 1.6px;
+    font-size: 1.6rem;
 
     @include breakpoint('medium') {
         font-size: 1.8rem;

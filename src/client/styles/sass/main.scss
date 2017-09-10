@@ -37,7 +37,8 @@
     display: block;
 
     @include breakpoint('small') {
-        display: none;
+        // display: none;
+        margin-top: .7rem;
     }
 }
 
@@ -143,10 +144,6 @@
     }
 }
 
-.project:nth-child(odd) {
-    // background-color: #CCC;
-}
-
 .project--one {
     background-color: #FD9A60;
 
@@ -196,6 +193,7 @@
     padding: 0;
     margin: 0;
     margin-bottom: 4rem;
+    margin-top: 3rem;
 
     a {
         text-decoration: none;
@@ -296,6 +294,7 @@
 .skill--ide {            background-image: url('/images/ide.svg'); }
 .skill--misc {           background-image: url('/images/misc.svg'); }
 .skill--templating {     background-image: url('/images/html5.svg'); }
+.skill--testing {        background-image: url('/images/jasmine.svg'); }
 
 .skill {
     position: relative;
@@ -314,7 +313,7 @@
     }
 
     &__title {
-        text-transform: uppercase;
+        // text-transform: uppercase;
         font-weight: bold;
         margin-bottom: .5rem;
         font-size: 1.6rem;
@@ -350,7 +349,7 @@
 }
 
 .band--featured .band__intro {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 
     @include breakpoint('large') {
         max-width: 60%;
@@ -358,6 +357,16 @@
 }
 
 .cv-promo {
-    background-color: #ccc;
+    background-color: #f8f8f8;
     padding: 3rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.band--aboutme {
+    border-top: 1px solid #CCC;
+}
+
+.github-promo__cta {
+    margin-left: 2rem;
 }
