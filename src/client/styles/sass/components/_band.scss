@@ -87,6 +87,14 @@ hr.full-width {
     margin-bottom: 4rem;
     font-size: 3.6rem;
   }
+
+  // Titles without a following subtitle
+  &--nosubtitle {
+    margin-bottom: 1.5rem;
+    @include breakpoint('medium') {
+        margin-bottom: 1rem;
+    }
+  }
 }
 
 .band__subtitle {
@@ -119,6 +127,10 @@ hr.full-width {
         margin-bottom: 2rem;
     }
 
+    @include breakpoint('large') {
+        margin-bottom: 4rem;
+    }
+
   .band__link {
     margin-top: 2rem;
   }
@@ -145,3 +157,4 @@ hr.full-width {
         margin-top: 3rem;
     }
 }
+

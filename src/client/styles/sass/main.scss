@@ -333,6 +333,7 @@
 
 .work__title {
     margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 .work__list {
@@ -365,8 +366,49 @@
 
 .band--aboutme {
     border-top: 1px solid #CCC;
+    border-bottom: 1px solid #ccc;
 }
 
 .github-promo__cta {
     margin-left: 2rem;
+}
+
+.contact-details {
+    border-left: 4px solid #C42B37;
+    padding-left: 3.5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+
+    &__item {
+        margin-bottom: 1.5rem;
+        &__title {
+            font-size: 1.8rem;
+            margin-bottom: .5rem;
+            margin-top: 0;
+        }
+
+        &__content {
+            font-size: 2.4rem;
+            color: #777777;
+        }
+
+        &__link {
+            color: $primary;
+        }
+    }
+}
+
+.moi {
+    padding-top: 5rem;
+    padding-left: 5rem;
+}
+
+.es335 {
+    margin-top: 17rem;
+    margin-left: -12rem;
+}
+
+.work-item {
+    overflow: hidden;
+    margin-bottom: 3rem;
 }
