@@ -22,8 +22,11 @@
 }
 
 .grid-row {
-    margin-left: -1.3888888889%;
-    margin-right: -1.3888888889%;
+    @include breakpoint('large') {
+        margin-left: -1.3888888889%;
+        margin-right: -1.3888888889%;
+    }
+
     overflow: hidden;
 }
 
@@ -41,5 +44,11 @@
 
 .grid-column--quarter { @include span(3); }
 
-.grid-column--half { @include span(6); }
+.grid-column--half {
+
+    @include breakpoint('medium') {
+        @include span(6);
+    }
+}
+
 .grid-column--half-2 { @include span(3 of 6); }

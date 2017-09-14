@@ -17,13 +17,11 @@
 
   window.addEventListener('scroll', debounce(function(event) {
 
-    if(screenIsTablet() && document.body.scrollTop > 0) {
+    if(screenIsTablet() || document.body.scrollTop > 0) {
         header.classList.add('is-visible');
     } else {
         header.classList.remove('is-visible');
     }
-
-
   }, 200));
 
   function screenIsTablet() {

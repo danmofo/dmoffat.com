@@ -38,3 +38,11 @@
         display: inherit;
     }
 }
+
+.u-visibleMedium {
+    display: block;
+
+    @include breakpoint('small') {
+        display: none;
+    }
+}

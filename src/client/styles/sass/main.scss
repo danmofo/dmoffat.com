@@ -35,9 +35,10 @@
     float: right;
     font-weight: normal;
     display: block;
+    margin-top: .5rem;
 
     @include breakpoint('small') {
-        // display: none;
+        display: none;
         margin-top: .7rem;
     }
 }
@@ -67,7 +68,10 @@
 .section--experience {}
 
 .project-list {
-    margin-top: 6rem;
+    margin-top: 3rem;
+    @include breakpoint('large') {
+        margin-top: 6rem;
+    }
 }
 
 .project {
@@ -90,6 +94,7 @@
     }
 
     &__title {
+        text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.18);
         margin-bottom: 2rem;
 
         @include breakpoint('small') {
@@ -106,6 +111,7 @@
             margin-bottom: 1rem;
 
             strong {
+                text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.18);
                 display: block;
             }
         }
@@ -177,10 +183,12 @@
     .project__list,
     strong {
         color: #454545;
+        text-shadow: none;
     }
 
     p, a, li {
         color: #6f6f6f;
+        text-shadow: none;
     }
 }
 
@@ -188,12 +196,22 @@
 .project-three {}
 
 .project-nav-list {
-    font-size: 2rem;
-    list-style-type: none;
+    font-size: 1.7rem;
     padding: 0;
     margin: 0;
-    margin-bottom: 4rem;
-    margin-top: 3rem;
+    list-style-type: none;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-decoration: underline;
+    text-align: center;
+
+    @include breakpoint('medium') {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        margin-top: 3rem;
+        text-align: left;
+        text-decoration: none;
+    }
 
     a {
         text-decoration: none;
@@ -226,6 +244,7 @@
 }
 
 .website-header {
+    -webkit-backface-visibility: hidden;
     position: fixed;
     transform: translateY(-100%);
     width: 100%;
@@ -313,6 +332,7 @@
     }
 
     &__title {
+        color: #454545;
         // text-transform: uppercase;
         font-weight: bold;
         margin-bottom: .5rem;
@@ -321,23 +341,71 @@
 
     &__content {
         color: #6f6f6f;
-        font-size: 1.4rem;
+        font-size: 1.5rem;
         line-height: 1.5;
         padding-bottom: .5rem;
 
         @include breakpoint('large') {
             padding-bottom: 2rem;
+            font-size: 1.6rem;
         }
     }
 }
 
-.work__title {
+.work-item__title {
     margin-bottom: 1rem;
     margin-top: 0;
 }
 
-.work__list {
+.work-item__list {
     font-size: 1.6rem;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    strong {
+        display: block;
+    }
+
+    li {
+        margin-bottom: 1rem;
+    }
+
+    @include breakpoint('medium') {
+
+    }
+}
+
+
+.work-item__image {
+    margin-bottom: 2rem;
+    max-height: 15rem;
+
+    @include breakpoint('medium') {
+        margin: 0;
+        max-height: 30rem;
+    }
+}
+
+.work-item__text {
+    font-size: 1.6rem;
+}
+
+.work-item {
+    overflow: hidden;
+    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #CCC;
+
+    @include breakpoint('medium') {
+        border: 0;
+    }
+}
+
+.work-item--last {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .band--featured {
@@ -350,7 +418,12 @@
 }
 
 .band--featured .band__intro {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+
+    @include breakpoint('medium') {
+        margin-bottom: 4rem;
+    }
+
 
     @include breakpoint('large') {
         max-width: 60%;
@@ -358,7 +431,7 @@
 }
 
 .cv-promo {
-    background-color: #f8f8f8;
+    background-color: #e6e6e6;
     padding: 3rem;
     text-align: center;
     margin-top: 2rem;
@@ -369,27 +442,57 @@
     border-bottom: 1px solid #ccc;
 }
 
+.band--contact {
+    .band__intro {
+        @include breakpoint('medium') {
+            max-width: 50%;
+        }
+    }
+}
+
 .github-promo__cta {
-    margin-left: 2rem;
+    width: 100%;
+
+    @include breakpoint('medium') {
+        width: auto;
+        margin-left: 2rem;
+    }
 }
 
 .contact-details {
-    border-left: 4px solid #C42B37;
-    padding-left: 3.5rem;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
+
+    @include breakpoint('medium') {
+        border-left: 4px solid #C42B37;
+        padding-left: 3.5rem;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
 
     &__item {
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.75rem;
+        @include breakpoint('medium') {
+            margin-bottom: 1.5rem;
+        }
+
         &__title {
-            font-size: 1.8rem;
-            margin-bottom: .5rem;
+            margin-bottom: .3rem;
             margin-top: 0;
+            font-size: 1.5rem;
+
+            @include breakpoint('medium') {
+                margin-bottom: .5rem;
+                font-size: 1.8rem;
+            }
         }
 
         &__content {
-            font-size: 2.4rem;
             color: #777777;
+            font-size: 1.8rem;
+            margin-bottom: .5rem;
+            @include breakpoint('medium') {
+                font-size: 2.4rem;
+                margin-bottom: 1.8rem;
+            }
         }
 
         &__link {
@@ -399,16 +502,29 @@
 }
 
 .moi {
-    padding-top: 5rem;
-    padding-left: 5rem;
+    margin-top: 3rem;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-width: 20rem;
+
+    @include breakpoint('medium') {
+        padding-top: 5rem;
+        padding-left: 5rem;
+        max-width: 100%;
+    }
 }
 
 .es335 {
-    margin-top: 17rem;
-    margin-left: -12rem;
+    margin-top: 3rem;
+
+    @include breakpoint('large') {
+        margin-top: 17rem;
+        margin-left: -12rem;
+    }
 }
 
-.work-item {
-    overflow: hidden;
-    margin-bottom: 3rem;
+.icon-cog {
+    margin-right: 1rem;
 }
